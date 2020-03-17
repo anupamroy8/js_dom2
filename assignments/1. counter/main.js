@@ -1,16 +1,29 @@
+let counter = 0;
 var num = document.querySelector("p");
+
 var inc = document.querySelector(".inc");
 var dec = document.querySelector(".dec");
 var res = document.querySelector(".reset");
 
+function displayCounter(n) {
+    if(n < 0) {
+        counter = 0;
+        n=0;
+    }
+    num.textContent = n;
+}
+
 function increase() {
-    num.textContent = Number(num.textContent)+1
+    counter = counter+1;
+    displayCounter(counter);
 }
 function decrease() {
-    num.textContent = Number(num.textContent)-1
+    counter = counter-1;
+    displayCounter(counter);
 }
 function resetvalue() {
-    num.textContent = 0
+    counter = 0;
+    displayCounter(counter);
 }
 
 inc.addEventListener("click", increase);
