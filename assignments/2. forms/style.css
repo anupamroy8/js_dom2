@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3ecb8;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #a8d3da;
+    font-weight: bold;
+}
+p {
+    font-size: 28px;
+    color: #b590ca;
+    font-weight: bold;
+}
+input {
+    display: block;
+    margin: 12px 0;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: grid;
+    
+}
+.submit {
+    font-size: 20px;
+    color: #b590ca;
+}
+.result {
+    text-align: center;
+    color: skyblue;
+}
